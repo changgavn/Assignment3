@@ -1,0 +1,2 @@
+- ví dụ thay đổi code dưới máy tính và đẩy  lên github
+- có thể xoá file nay sau khi thực hành
