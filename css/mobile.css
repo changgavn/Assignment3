@@ -1,0 +1,319 @@
+@media screen and (max-width: 600px) {
+    * {
+        margin: 0px;
+        font-family: arial, sans-serif, tahoma;
+    }
+
+    .bg-grey {
+        background: #f7f7f7;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    section>.container {
+        width: auto;
+        margin: auto;
+        display: block;
+        align-items: center;
+    }
+
+    /* BANNER IMAGE AND CENTER TEXT*/
+    .banner-container {
+        position: relative;
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    .banner-container img {
+        background-image: linear-gradient(rgba (34, 34, 34, 0.6),
+                rgba(34, 34, 34, 0.6)),
+            url(../images/banner.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 40vh;
+    }
+
+    /* Centered text */
+    #banner {
+        display: none;
+    }
+
+    /* NAVIGATION BAR */
+    #nav-bar {
+        background-color: whitesmoke;
+    }
+
+    /* Style the links inside the navigation bar */
+    .test {
+        display: none;
+    }
+
+    #nav-bar a {
+        color: black;
+        text-decoration: none;
+        font-size: 13px;
+        text-transform: uppercase;
+        display: block;
+        padding-top: 10px;
+    }
+
+    /* Change the color of links on hover */
+    #nav-bar a:hover {
+        background-color: #ddd;
+        text-decoration: dashed;
+    }
+
+    /* icon color */
+    #nav-bar i {
+        color: rgba(26, 118, 223, 0.884);
+        padding-right: 5px;
+        padding-left: 10px;
+    }
+
+    /* AVATAR */
+    #avatar {
+        display: none;
+    }
+
+    /* MỤC TIÊU NGHỀ NGHIỆP */
+    #target {
+        padding-top: 25px;
+        margin: 20px;
+        align-items: center;
+        text-align: justify;
+        /* border: 5px solid red; */
+    }
+
+    #personal-info {
+        padding-top: 25px;
+        margin: 20px;
+        /* border: 5px solid red; */
+    }
+
+    #job-info>.container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .job-info-layout1 {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr auto;
+        border: solid 1px rgb(212, 211, 211);
+        width: 300px;
+        /* margin: 20px; */
+        /* padding: 5px; */
+    }
+
+    .job-info-title {
+        align-self: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .job-info-icon {
+        align-self: center;
+        text-align: center;
+        font-size: 20px;
+        color: #696969;
+    }
+
+    .job-info-content {
+        grid-column: 1/-1;
+        font-size: 12px;
+    }
+
+    .job-info-layout1 ul {
+        list-style: none;
+    }
+
+    .job-info-layout1 li::before {
+        content: "-";
+        padding: 5px;
+    }
+
+    .color-bullet::before {
+        content: "\2022";
+        color: #199cdb;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+    }
+
+    .hobby-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .hobby-container div {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 1px solid #199cdb;
+    }
+
+    .hobby-container i {
+        padding: 20px;
+        font-size: 20px;
+        color: #199cdb;
+    }
+
+    .hobby-container p {
+        margin-top: 10px;
+        color: #199cdb;
+    }
+
+    .ranking {
+        padding-left: 20px;
+    }
+
+    .ranking-border-blue {
+        height: 2px;
+        width: 50px;
+        background-color: #199cdb;
+        display: inline-block;
+    }
+
+    .ranking-border {
+        height: 2px;
+        width: 50px;
+        background-color: lightslategrey;
+        display: inline-block;
+    }
+
+    /* view more,less button */
+    .hide-content {
+        display: none;
+    }
+
+    .view-btn {
+        grid-column: 1/-1;
+        background-color: rgb(233, 227, 146);
+        border: 1px solid rgb(233, 227, 146);
+        border-radius: 60%;
+        opacity: 0;
+    }
+
+    /* opacity khiến cho button bị transparent đi */
+    .view-btn:hover {
+        opacity: 1;
+    }
+
+    /* CHỨNG CHỈ GIẢI THƯỞNG */
+    #certificate .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    #certificate .section-title {
+        flex: 1 100%;
+        margin: 10px;
+    }
+
+    #certificate .cert-container {
+        display: block;
+        border-bottom: 1px solid #d6c08d;
+        margin: 10px;
+    }
+
+    #certificate img {
+        width: 95%;
+        height: 120px;
+    }
+
+    #certificate ul {
+        list-style: none;
+    }
+
+    #certificate li::before {
+        content: "-";
+        padding-left: 0;
+        padding-right: 5px;
+    }
+
+    #certificate .line-break {
+        display: none;
+    }
+
+    .break {
+        display: none;
+    }
+
+    /* DỰ ÁN */
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .project {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        align-content: normal;
+        justify-items: stretch;
+        border: solid 1px black;
+    }
+
+    #project img {
+        width: 350%;
+        height: auto;
+        grid-column: 1 / -1;
+    }
+
+    .title {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .year {
+        grid-column: 1 / -1;
+        border: solid 1px black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #project div:nth-child(n+3) {
+        border: solid 1px black;
+    }
+
+    .border-radius {
+        border-radius: 50%;
+        border: 1px solid rgb(7, 155, 214);
+        background-color: rgb(7, 155, 214);
+    }
+
+    /* FOOTER */
+    #footer .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        height: 40px;
+    }
+
+    #footer .social {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer .icon-border {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: 1px solid #199cdb;
+        background-color: #199cdb;
+        padding-left: 0.5px;
+        padding-top: 1px;
+        color: whitesmoke;
+    }
+}
