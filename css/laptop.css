@@ -149,7 +149,6 @@
     justify-items: center;
     margin: 20px;
     padding: 5px;
-    height: auto;
   }
 
   .job-info-title {
@@ -214,6 +213,7 @@
   }
 
   .ranking {
+    grid-column: 1/-1;
     padding-left: 20px;
   }
 

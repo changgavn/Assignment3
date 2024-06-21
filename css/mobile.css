@@ -105,8 +105,6 @@
         grid-template-rows: 1fr auto;
         border: solid 1px rgb(212, 211, 211);
         width: 300px;
-        /* margin: 20px; */
-        /* padding: 5px; */
     }
 
     .job-info-title {

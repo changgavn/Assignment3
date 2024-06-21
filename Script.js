@@ -20,15 +20,22 @@ document
 	});
 
 //VIEW MORE/lESS BUTTON
-document.querySelectorAll(".view-btn").forEach(function (button) {
+const btn = document.querySelectorAll(".view-btn");
+btn.forEach(function (button, index) {
 	button.addEventListener("click", function () {
 		let hide = this.nextElementSibling;
 		if (hide.style.display === "none") {
 			hide.style.display = "block";
 			this.textContent = "▲View Less";
+			if (index < 3) {
+				hide.style.height = "600px";
+			} else {
+				hide.style.height = "250px";
+			}
 		} else {
 			hide.style.display = "none";
 			this.textContent = "▼View More";
+			hide.style.height = "auto";
 		}
 	});
 });
